@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>A Qt Journey from Desktop to Mobile</title>
+
+		<meta name="description" content="A Qt Journey from Desktop to Mobile">
+		<meta name="author" content="Nicolas Froment">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/musescore.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>MuseScore<br/></h1>
+					<p>Partitions en tout genre</p>
+					<p>
+						<small><a href="http://blog.lasconic.com">Nicolas Froment</a> / <a href="http://twitter.com/lasconic">@lasconic</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h1>MuseScore</h1>
+					<p>Editeur de partitions</p>
+					<ul>
+					    <li><b>Gratuit</b> et Libre</li>
+						<li>Facile à utiliser</li>
+						<li>90% des fonctions des alternatives payantes (chères)</li>
+						<li>De belles partitions</li>
+						<li>Populaire, 10 million de téléchargements</li>
+					</ul>					
+				</section>
+
+				<section>
+					<img width="768px" src="images/trends.png">
+				</section>	
+
+				<section>
+					<h2>MuseScore.com</h2>
+					<ul>
+						<li>Des centaines de milliers de partitions</li>
+						<li>Dans un format éditable!</li>
+						<li>Mise en ligne par tout le monde</li>
+					</ul>
+				</section>
+
+				<section data-background="images/piano_paper.jpg">
+					
+				</section>	
+
+				<section data-background="images/piano_tablet.jpg">
+					
+				</section>	
+
+				<section>
+					<h2>Applications mobiles</h2>
+					<ul>
+					    <li>Affiche et joue les partitions</li>					
+					    <li>Changement de tempo</li>
+					    <li>Mixer, changer le volume des parties indépendamment</li>
+					    <li>Pour Android et iOS</li>
+					    <li>Gratuite ou payante</li>
+					</ul>
+				</section>
+				<section>
+					<img width="200" src="images/100Library.png">
+					<img width="200" src="images/101Library_expanded_menu.png">
+					<img width="200" src="images/401Score_detail_popouts.png">		
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				slideNumber: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
